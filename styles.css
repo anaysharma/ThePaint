@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div {
+    display: grid;
+    place-items: center;
+}
+
+div.picturepanel {
+    position: absolute;
+    inset: 10px auto auto auto;
+    cursor: crosshair;
+    border: 2px solid rgb(152, 152, 152);
+    border-radius: 10px;
+}
+
+div.toolbar {
+    position: fixed;
+    inset: auto auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+div.toolbar > * {
+    display: flex;
+    justify-items: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.363);
+    align-items: center;
+    gap: 10px;
+}
+
+select,
+input {
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 2rem;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 201, 201);
+    text-decoration: none;
+}
